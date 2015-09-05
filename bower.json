@@ -1,0 +1,27 @@
+{
+  "name": "personal",
+  "version": "0.0.0",
+  "keywords": [
+    "jose",
+    "zamudio",
+    "jose",
+    "zamudio",
+    "javascript",
+    "software"
+  ],
+  "authors": [
+    "Jose Zamudio"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "Ionicons": "ionicons#~2.0.1",
+    "angular": "~1.4.5",
+    "angular-animate": "~1.4.5",
+    "angular-masonry": "~0.11.1",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "jquery-bridget": "~1.1.0",
+    "ngScrollTo": "*"
+  }
+}

@@ -1,0 +1,38 @@
+
+// Fonts
+// --------------------------------------------------
+
+$font-family-base:    'AvenirNext-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-serif:   'Baskerville', 'HoeflerText', 'TimesNewRomanPS', serif;
+$font-family-japan:   'ヒラギノ角ゴ Pro W3', Arial, 'ＭＳ Ｐゴシック', sans-serif;
+$font-family-accent:  'BrandonGrotesque', 'AvenirNext-DemiBold', 'Helvetica-Bold', 'Arial-Bold', sans-serif;
+
+// Color Palette!
+// be extremely selective with the colors you add here
+// make sure there isn't already one that you can use
+// -------------------------
+
+$gray: #444;
+$slate: #939393;
+$aluminium: #c4c6c8;
+$off-white: #f0f1f2;
+$white: #fff;
+$error-red: #ff3f3f;
+$pink: #ec1068;
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+$header-height: 35rem;
+
+// Media queries breakpoints
+// --------------------------------------------------
+$screen-xs-min: 300px; // Extra small screen / phone
+$screen-sm-min: 568px; // Small screen / tablet
+$screen-md-min: 769px; // Medium screen / desktop
+$screen-lg-min: 992px; // Large screen / wide desktop
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: 1200px;

@@ -1,0 +1,47 @@
+.portfolio {
+  margin-bottom: 50px;
+
+  .categories {
+    text-align: center;
+    color: $gray;
+
+    .active {
+      color: $pink;
+      border-bottom: 1px solid $pink;
+    }
+
+    ul {
+      font-family: $font-family-base;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 10px;
+      list-style-type: none;
+      list-style-position:inside;
+      margin:0;
+      padding:0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 20px 5px;
+      cursor: pointer;
+      padding: 5px 25px 14px 25px;
+
+      &:hover {
+        color: $pink;
+        border-bottom: 1px solid $pink;
+      }
+    }
+  }
+  .items {
+    text-align: center;
+
+    .masonry-brick {
+      margin: 2px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

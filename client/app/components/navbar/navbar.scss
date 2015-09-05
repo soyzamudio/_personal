@@ -1,0 +1,44 @@
+.navbar-default {
+  background: $white;
+  color: $gray;
+  border: none;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+    }
+  }
+
+  .active {
+    color: $pink !important;
+    border-bottom: 1px solid $pink;
+
+    @media (max-width: $screen-sm-max) {
+      color: $gray;
+      border-bottom: none;
+    }
+  }
+
+  .navbar-nav > li > a {
+    color: $gray;
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-bottom: 14px;
+
+    &:hover {
+      color: $pink;
+      border-bottom: 1px solid $pink;
+      cursor: pointer;
+
+      @media (max-width: $screen-sm-max) {
+        color: $gray;
+        border-bottom: none;
+      }
+    }
+  }
+}

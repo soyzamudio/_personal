@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jose Zamudio | JavaScript Engineer</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-cloak>
+    <div
+      ng-include="'/app/components/navbar/navbar.html'"
+      ng-controller="NavbarController">
+    </div>
+    <div
+      id="home"
+      ng-include="'/app/components/header/header.html'">
+    </div>
+    <div
+      id="work"
+      ng-include="'/app/components/portfolio/portfolio.html'"
+      ng-controller="PortfolioController">
+    </div>
+    <div
+      id="experience"
+      ng-include="'/app/components/experience/experience.html'">
+    </div>
+
+    <!-- <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-bridget/jquery.bridget.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/masonry/dist/masonry.pkgd.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="vendor/angular-masonry/angular-masonry.js"></script> -->
+
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/jquery-bridget/jquery.bridget.js"></script>
+    <script src="vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-masonry/angular-masonry.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/ngScrollTo/ng-scrollto.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
+</html>
