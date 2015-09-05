@@ -8,9 +8,8 @@
 .header {
   height: $header-height;
   font-family: $font-family-base;
-  background: $off-white url('../assets/images/header-bg.jpeg');
+  background: $off-white url('../assets/images/header-bg.jpeg') no-repeat center -125px fixed;
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
