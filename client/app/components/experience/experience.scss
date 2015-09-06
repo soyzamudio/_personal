@@ -1,4 +1,55 @@
 .experience {
-  height: 500px;
-  background: $off-white;
+  text-align: center;
+  margin-bottom: 50px;
+
+  .years {
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    height: 50px;
+    width: 50px;
+    background: $off-white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background: $pink;
+      color: $white;
+    }
+  }
+
+  .active {
+    background: $pink;
+    color: $white;
+  }
+
+  .job {
+    margin: 50px;
+
+    h3 {
+      font-family: $font-family-base;
+      color: $gray;
+      font-size: 1em;
+      letter-spacing: 1px;
+
+      span {
+        color: $pink;
+      }
+    }
+
+    p {
+      color: $slate;
+      margin: auto;
+      width: 60%;
+    }
+
+    .ng-hide {
+      opacity: 0;
+    }
+  }
 }
