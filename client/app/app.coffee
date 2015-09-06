@@ -2,10 +2,10 @@ angular.module 'app.services', []
 angular.module 'app.directives', []
 angular.module 'app.components', []
 angular.module 'app.pages', []
+angular.module 'app.controllers', []
 angular.module 'app', [
   # Angular modules
   'ngAnimate'
-  'wu.masonry'
   'ngScrollTo'
 
   # Our container modules
@@ -13,4 +13,5 @@ angular.module 'app', [
   'app.directives'
   'app.components'
   'app.pages'
+  'app.controllers'
 ]

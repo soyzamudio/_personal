@@ -12,6 +12,7 @@
       <ul class="nav navbar-nav">
         <li ng-repeat="item in menu">
           <a
+            class="menu-{{item}}"
             ng-class="{
               active: active === item
             }"

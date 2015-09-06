@@ -5,10 +5,6 @@ gulp.task 'copy', ->
   copyPaths = [
     'client/**/*.html'
     'client/assets/**/*.otf'
-    'client/assets/**/*.jpeg'
-    'client/assets/**/*.jpg'
-    'client/assets/**/*.png'
-    'client/assets/**/*.gif'
   ]
   gulp
     .src copyPaths

@@ -3,10 +3,11 @@ angular.module 'app'
     $scope.active = 'home'
     $scope.menu = [
       'home'
-      'work'
+      'portfolio'
       'experience'
       'contact'
     ]
     $scope.selectMenu = (item) ->
       $scope.active = item
       $('.navbar-collapse').collapse 'hide'
+      return true

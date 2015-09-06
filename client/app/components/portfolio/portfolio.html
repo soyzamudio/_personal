@@ -10,18 +10,11 @@
     </ul>
   </div>
   <div class="container items">
-    <div
-      masonry="{
-        transitionDuration: '0.2s',
-        isFitWidth: true
-      }"
-      reload-on-show
-      preserve-order>
-      <img
-        class="masonry-brick"
-        ng-src="{{brick.src}}"
-        ng-repeat="brick in bricks"
-        ng-if="displayBrick(brick.type)">
-    </div>
+    <portfolio-cell
+      class="anim brick"
+      item="brick"
+      ng-repeat="brick in bricks"
+      ng-show="displayBrick(brick.type)">
+    </portfolio-cell>
   </div>
 </div>

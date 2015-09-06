@@ -7,6 +7,7 @@
     <title>Jose Zamudio | JavaScript Engineer</title>
 
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/Ionicons/css/ionicons.min.css" />
     <!-- inject:css -->
     <!-- endinject -->
 
@@ -16,24 +17,37 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="vendor/angular/angular.js"></script>
   </head>
-  <body ng-cloak>
+  <body ng-cloak ng-controller='AppController'>
     <div
-      ng-include="'app/components/navbar/navbar.html'"
-      ng-controller="NavbarController">
+      class="spinner"
+      ng-if="!loaded">
+      <img src="assets/images/spinner.gif">
     </div>
-    <div
-      id="home"
-      ng-include="'app/components/header/header.html'">
-    </div>
-    <div
-      id="work"
-      ng-include="'app/components/portfolio/portfolio.html'"
-      ng-controller="PortfolioController">
-    </div>
-    <div
-      id="experience"
-      ng-include="'app/components/experience/experience.html'">
+    <div elem-ready="everythingLoaded()">
+      <div
+        ng-include="'app/components/navbar/navbar.html'"
+        ng-controller="NavbarController">
+      </div>
+      <div
+        id="home"
+        ng-include="'app/components/header/header.html'"
+        scroll>
+      </div>
+      <div
+        id="portfolio"
+        ng-include="'app/components/portfolio/portfolio.html'"
+        ng-controller="PortfolioController">
+      </div>
+      <div
+        id="experience"
+        ng-include="'app/components/experience/experience.html'">
+      </div>
+      <div
+        id="contact"
+        ng-include="'app/components/contact/contact.html'">
+      </div>
     </div>
 
     <!-- <script src="vendor/jquery/dist/jquery.min.js"></script>
@@ -45,11 +59,6 @@
     <script src="vendor/angular-masonry/angular-masonry.js"></script> -->
 
     <script src="vendor/jquery/dist/jquery.js"></script>
-    <script src="vendor/jquery-bridget/jquery.bridget.js"></script>
-    <script src="vendor/masonry/dist/masonry.pkgd.min.js"></script>
-    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/angular/angular.js"></script>
-    <script src="vendor/angular-masonry/angular-masonry.js"></script>
     <script src="vendor/angular-animate/angular-animate.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
     <script src="vendor/ngScrollTo/ng-scrollto.js"></script>

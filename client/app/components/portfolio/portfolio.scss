@@ -33,15 +33,13 @@
       }
     }
   }
+
   .items {
     text-align: center;
 
-    .masonry-brick {
-      margin: 2px;
-
-      &:hover {
-        opacity: 0.8;
-      }
+    .brick.ng-hide {
+      opacity: 0;
     }
   }
+
 }

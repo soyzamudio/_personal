@@ -1,3 +1,4 @@
+@import 'animations';
 @import 'variables';
 @import 'app';
 @import 'fonts';
@@ -5,3 +6,5 @@
 @import '../app/components/header/header';
 @import '../app/components/portfolio/portfolio';
 @import '../app/components/experience/experience';
+@import '../app/components/contact/contact';
+@import '../app/directives/portfolio-cell/portfolio-cell';

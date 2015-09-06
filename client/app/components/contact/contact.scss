@@ -1,0 +1,29 @@
+.contact {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    font-size: 30px;
+    list-style-type: none;
+    list-style-position:inside;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    color: $gray;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 20px;
+
+    @media (max-width: $screen-sm-max) {
+      margin: 0 10px;
+    }
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
