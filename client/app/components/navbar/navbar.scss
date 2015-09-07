@@ -3,6 +3,19 @@
   color: $gray;
   border: none;
 
+
+  .navbar-toggle {
+    border: none;
+
+    &:focus {
+      background: none;
+    }
+
+    .icon-bar {
+      background-color: $gray;
+    }
+  }
+
   .container {
     display: flex;
     justify-content: center;
