@@ -5,11 +5,11 @@
 
   angular.module('app.components', []);
 
-  angular.module('app.pages', []);
+  angular.module('app.modals', []);
 
   angular.module('app.controllers', []);
 
-  angular.module('app', ['ngAnimate', 'ngScrollTo', 'app.services', 'app.directives', 'app.components', 'app.pages', 'app.controllers']);
+  angular.module('app', ['ngAnimate', 'ngScrollTo', 'ui.bootstrap', 'app.services', 'app.directives', 'app.components', 'app.modals', 'app.controllers']);
 
 }).call(this);
 

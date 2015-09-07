@@ -1,1 +1,1 @@
-{"version":3,"sources":["init.coffee"],"names":[],"mappings":"AAAA;EAAA,OAAO,CAAC,MAAR,CAAe,KAAf,CACE,CAAC,GADH,CACO,EAAA,CAAG,SAAA,GAAA,CAAH,CADP;AAAA","file":"init.js","sourceRoot":"/source/","sourcesContent":["angular.module 'app'\n  .run ng () ->\n"]}
+{"version":3,"sources":["init.coffee"],"names":[],"mappings":"AAAA;EAAA,OAAO,CAAC,MAAR,CAAe,KAAf,CACE,CAAC,GADH,CACO,EAAA,CAAG,SAAA,GAAA,CAAH,CADP;AAAA","file":"init.js","sourceRoot":"/source/","sourcesContent":["angular.module 'app'\n  .run ng ->\n"]}
