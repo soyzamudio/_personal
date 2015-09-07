@@ -1,0 +1,36 @@
+{
+  "name": "ngScrollTo",
+  "homepage": "https://github.com/iameugenejo/ngScrollTo",
+  "authors": [
+    "Eugene Jo <i.am.eugene.jo@gmail.com>"
+  ],
+  "description": "Simple AngularJS scroll-to directive",
+  "main": "ng-scrollto.js",
+  "keywords": [
+    "angularjs",
+    "scroll",
+    "scrollto",
+    "offset",
+    "anchor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0"
+  },
+  "_release": "a80514141e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a80514141eccfc1e9c32b2db89286385bc575514"
+  },
+  "_source": "git://github.com/iameugenejo/ngScrollTo.git",
+  "_target": "*",
+  "_originalSource": "ngScrollTo"
+}

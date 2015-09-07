@@ -1,0 +1,454 @@
+.anim {
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  background: #fff;
+  padding-top: 50px;
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.spinner {
+  position: absolute;
+  background: #2A2826;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1031;
+}
+
+.spinner img {
+  width: 100px;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url("../assets/fonts/BrandonGrotesque.otf");
+}
+
+.navbar-default {
+  background: #fff;
+  color: #444;
+  border: none;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #444;
+}
+
+.navbar-default .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .container {
+    display: block;
+  }
+}
+
+.navbar-default .active {
+  color: #ec1068 !important;
+  border-bottom: 1px solid #ec1068;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .active {
+    color: #444;
+    border-bottom: none;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #444;
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding-bottom: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ec1068;
+  border-bottom: 1px solid #ec1068;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #444;
+    border-bottom: none;
+  }
+}
+
+.header {
+  height: 35rem;
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: #f0f1f2 url("../assets/images/header-bg.jpeg") no-repeat center -125px fixed;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 30rem;
+  }
+}
+
+.header .outer {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 470px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(196, 198, 200, 0.5);
+}
+
+@media (max-width: 768px) {
+  .header .outer {
+    width: 350px;
+  }
+}
+
+.header .inner {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(196, 198, 200, 0.5);
+}
+
+.header .inner h1 {
+  font-family: "BrandonGrotesque", "AvenirNext-DemiBold", "Helvetica-Bold", "Arial-Bold", sans-serif;
+  font-size: 2em;
+  margin: 0 0 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .header .inner h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+
+.header .inner h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header .inner h2 {
+    font-size: 1em;
+  }
+}
+
+.header .inner h2 a {
+  color: #ec1068;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.portfolio .categories {
+  text-align: center;
+  color: #444;
+}
+
+.portfolio .categories .active {
+  color: #ec1068;
+  border-bottom: 1px solid #ec1068;
+}
+
+.portfolio .categories ul {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio .categories li {
+  display: inline-block;
+  margin: 20px 5px;
+  cursor: pointer;
+  padding: 5px 25px 14px 25px;
+}
+
+.portfolio .categories li:hover {
+  color: #ec1068;
+  border-bottom: 1px solid #ec1068;
+}
+
+.portfolio .items {
+  text-align: center;
+}
+
+.portfolio .items .brick.ng-hide {
+  opacity: 0;
+}
+
+.experience {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experience .selector {
+  border-bottom: 1px solid #f0f1f2;
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .experience .selector {
+    width: 100%;
+    border: none;
+  }
+}
+
+.experience .selector .years {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  height: 50px;
+  width: 50px;
+  background: #f0f1f2;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.experience .selector .years:hover {
+  background: #ec1068;
+  color: #fff;
+}
+
+.experience .selector .arrow {
+  position: relative;
+  top: 35px;
+  left: -24px;
+  cursor: default;
+}
+
+.experience .selector .arrow::before {
+  content: '';
+  position: absolute;
+  top: 75%;
+  right: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #f0f1f2;
+  margin-top: -10px;
+}
+
+.experience .selector .arrow:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .experience .selector .arrow {
+    display: none;
+  }
+}
+
+.experience .selector .active {
+  background: #ec1068;
+  color: #fff;
+}
+
+.experience .job {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #f0f1f2;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .experience .job {
+    width: 90%;
+  }
+}
+
+.experience .job h3 {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #444;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.experience .job h3 span {
+  color: #ec1068;
+}
+
+.experience .job p {
+  color: #939393;
+  margin: auto;
+  width: 90%;
+}
+
+.experience .job.ng-hide {
+  opacity: 0;
+}
+
+.contact {
+  height: 100px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact ul {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .contact li {
+    margin: 0 10px;
+  }
+}
+
+.contact li a {
+  color: #444;
+  text-decoration: none;
+}
+
+.contact li a:hover {
+  color: #ec1068;
+}
+
+.contact li a i {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact li a i {
+    display: none;
+  }
+}
+
+.portfolio-cell {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .portfolio-cell {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.portfolio-cell .portfolio-cell-information {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-cell .portfolio-cell-information:hover {
+  opacity: 1;
+  border: 1px solid #f0f1f2;
+}
+
+.portfolio-cell .portfolio-cell-information h4 {
+  font-family: "BrandonGrotesque", "AvenirNext-DemiBold", "Helvetica-Bold", "Arial-Bold", sans-serif;
+  font-size: 14px;
+  color: #ec1068;
+}
+
+/*# sourceMappingURL=../assets/main.css.map */

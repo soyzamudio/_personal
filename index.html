@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jose Zamudio | JavaScript Engineer</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/Ionicons/css/ionicons.min.css" />
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/zamudio.css">
+    <!-- endinject -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="vendor/angular/angular.js"></script>
+  </head>
+  <body ng-cloak ng-controller='AppController'>
+    <div
+      class="spinner"
+      ng-if="!loaded">
+      <img src="assets/images/spinner.gif">
+    </div>
+    <div elem-ready="everythingLoaded()">
+      <div
+        ng-include="'app/components/navbar/navbar.html'"
+        ng-controller="NavbarController">
+      </div>
+      <div
+        id="home"
+        ng-include="'app/components/header/header.html'"
+        scroll>
+      </div>
+      <div
+        id="portfolio"
+        ng-include="'app/components/portfolio/portfolio.html'"
+        ng-controller="PortfolioController">
+      </div>
+      <div
+        id="experience"
+        ng-include="'app/components/experience/experience.html'"
+        ng-controller="ExperienceController">
+      </div>
+      <div
+        id="contact"
+        ng-include="'app/components/contact/contact.html'"
+        ng-controller="ContactController">
+      </div>
+    </div>
+
+    <!-- <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-bridget/jquery.bridget.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/masonry/dist/masonry.pkgd.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="vendor/angular-masonry/angular-masonry.js"></script> -->
+
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/ngScrollTo/ng-scrollto.js"></script>
+    <!-- inject:js -->
+    <script src="app/app.js"></script>
+    <script src="app/init.js"></script>
+    <script src="app/config/misc.js"></script>
+    <script src="app/controllers/app-controller.js"></script>
+    <script src="app/helpers/scroll.js"></script>
+    <script src="app/helpers/utils.js"></script>
+    <script src="app/components/contact/contact.js"></script>
+    <script src="app/components/experience/experience.js"></script>
+    <script src="app/components/navbar/navbar.js"></script>
+    <script src="app/components/header/header.js"></script>
+    <script src="app/components/portfolio/portfolio.js"></script>
+    <script src="app/directives/element-ready/element-ready.js"></script>
+    <script src="app/directives/portfolio-cell/portfolio-cell.js"></script>
+    <script src="app/directives/scroll/scroll.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

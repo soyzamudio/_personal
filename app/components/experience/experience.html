@@ -1,0 +1,27 @@
+<div class="experience">
+  <div class="selector">
+    <div
+      class="years"
+      ng-class="{
+        'active': activeYear === year
+      }"
+      ng-repeat="year in years | orderBy: '-'"
+      ng-click="showYear(year)">
+      {{year}}
+      <div
+        class="arrow"
+        ng-if="activeYear === year">
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="anim job"
+      ng-repeat="job in experience"
+      ng-show="showExperience(job)">
+      <img ng-src="{{job.src}}">
+      <h3>{{job.company}} - <span>{{job.title}}</span></h3>
+      <p>{{job.description}}</p>
+    </div>
+  </div>
+</div>

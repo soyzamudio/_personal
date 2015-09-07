@@ -1,0 +1,20 @@
+<div class="portfolio">
+  <div class="categories">
+    <ul>
+      <li
+        ng-repeat="item in menu"
+        ng-click="selectType(item)"
+        ng-class="{
+          active: type === item
+        }">{{item}}</li>
+    </ul>
+  </div>
+  <div class="container items">
+    <portfolio-cell
+      class="anim brick"
+      item="brick"
+      ng-repeat="brick in bricks"
+      ng-show="displayBrick(brick.type)">
+    </portfolio-cell>
+  </div>
+</div>
