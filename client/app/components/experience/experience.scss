@@ -2,34 +2,77 @@
   text-align: center;
   margin-bottom: 50px;
 
-  .years {
-    font-family: $font-family-base;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    height: 50px;
-    width: 50px;
-    background: $off-white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 50%;
-    cursor: pointer;
+  .selector {
+    border-bottom: 1px solid $off-white;
+    width: 50%;
+    margin: auto;
 
-    &:hover {
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      border: none;
+    }
+
+    .years {
+      font-family: $font-family-base;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 10px;
+      height: 50px;
+      width: 50px;
+      background: $off-white;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background: $pink;
+        color: $white;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      top: 35px;
+      left: -24px;
+
+      &::before {
+        $arrow-size: 10px;
+        content: '';
+        position: absolute;
+        top: 75%;
+        right: -$arrow-size * 2;
+        border: $arrow-size solid transparent;
+        border-bottom: $arrow-size solid $off-white;
+        margin-top: -$arrow-size;
+
+        @media (max-width: $screen-lg-max) {
+          top: 20%;
+        }
+      }
+
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    .active {
       background: $pink;
       color: $white;
     }
   }
 
-  .active {
-    background: $pink;
-    color: $white;
-  }
-
   .job {
-    margin: 50px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $off-white;
+    width: 50%;
+
+    @media (max-width: $screen-sm-max) {
+      width: 90%;
+    }
 
     h3 {
       font-family: $font-family-base;
@@ -45,10 +88,10 @@
     p {
       color: $slate;
       margin: auto;
-      width: 60%;
+      width: 90%;
     }
 
-    .ng-hide {
+    &.ng-hide {
       opacity: 0;
     }
   }
