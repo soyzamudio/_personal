@@ -1,2 +1,2 @@
 angular.module 'app'
-  .run ng () ->
+  .run ng ->
