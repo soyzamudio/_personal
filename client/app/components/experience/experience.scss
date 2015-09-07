@@ -37,6 +37,7 @@
       position: relative;
       top: 35px;
       left: -24px;
+      cursor: default;
 
       &::before {
         $arrow-size: 10px;
@@ -47,10 +48,17 @@
         border: $arrow-size solid transparent;
         border-bottom: $arrow-size solid $off-white;
         margin-top: -$arrow-size;
+      }
 
-        @media (max-width: $screen-lg-max) {
-          top: 20%;
-        }
+      &:after {
+        $arrow-size: 10px;
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: -$arrow-size * 2;
+        border: $arrow-size solid transparent;
+        border-bottom: $arrow-size solid $white;
+        margin-top: -$arrow-size;
       }
 
       @media (max-width: $screen-sm-max) {
